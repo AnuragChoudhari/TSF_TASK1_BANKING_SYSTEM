@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body{
+    overflow: hidden;
+    
+}
+
+nav{
+    position: fixed;
+    display: flex;
+
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
+
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end !important;
+    padding-right: 60px;
+}
+
+nav ul li a{
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+   padding: 20px;
+    transition: .4s ease-in-out;
+    font-size: 18px;
+    
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 0px 8px white);
+}
+
+#hero_container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: url('http://localhost/TSF_TASK1/background.png') no-repeat center center/cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px black;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+
+#hero_content{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#hero_content_header{
+    background: radial-gradient(251.36% 2104.22% at 50.61% 20.91%, #CC00FF 0%, #0019FF 99.98%, #3300FF 99.99%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+    font-weight: 800;
+    /* animation: blinks 5s 1s infinite ease-in-out; */
+    filter: drop-shadow(2px 0px 20px rgb(136, 0, 255))  ;
+}
+
+/* @keyframes blinks {
+    0%{
+        filter: drop-shadow(0px 0px 0px rgb(136, 0, 255));
+
+    }
+    50%{
+        filter: drop-shadow(2px 0px 20px rgb(136, 0, 255))  ;
+    }
+  
+} */
+
+#hero_content_header h1{
+    font-family: Montserrat !important;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+#hero_content_header_sub{
+    color: white;
+}
+
+#hero_content_header_sub h3{
+    font-family: Montserrat !important;
+    font-weight: 400;
+    color: white;
+}
+
+#hero_content_cta {
+
+    padding: 50px;
+}
+
+#hero_content_cta a{
+
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(96.81deg, #CC00FF -13.21%, #0019FF 108.06%, #3300FF 108.08%);
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 16px;
+
+    transition: .4s ease-in-out;
+}
+
+#hero_content_cta a i{
+    transition: 1s ease-in-out;
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+#hero_content_cta a:hover{
+        filter: drop-shadow(2px 0px 20px rgba(139, 56, 255, 0.5));
+            
+}
+
+
+#hero_content_cta a:hover i{
+    transform: translateX(5px);
+    opacity: 1;
+}
+
+
+footer{
+    position: relative;
+    top: 130px;
+    color: white;   
+    bottom: 20px;
+
+}
+
+footer h3{
+    font-weight: 100;
+    font-size: 14px;
+    margin: 0;
+}
+
+#footer_links{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#footer_links a{
+    font-size: 24px;
+    padding: 5px;
+    transition: .4s ease-in-out;
+    color: white;
+}
+
+#footer_links a:hover{
+    transform: scale(1.5) rotate(360deg);
+    filter: drop-shadow(2px 0px 10px rgba(244, 244, 244,0.5));
+}
+
+#footers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
